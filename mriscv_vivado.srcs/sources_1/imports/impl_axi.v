@@ -35,20 +35,20 @@ module impl_axi(
 	output          ROM_HLD,
 	//output          ROM_SCK,
     // Slave 2 (AXI_SRAM), DDR2 interface
-    output [12:0]   ddr2_addr,
-    output [2:0]    ddr2_ba,
-    output          ddr2_ras_n,
-    output          ddr2_cas_n,
-    output          ddr2_we_n,
-    output [0:0]    ddr2_ck_p,
-    output [0:0]    ddr2_ck_n,
-    output [0:0]    ddr2_cke,
-    output [0:0]    ddr2_cs_n,
-    output [1:0]    ddr2_dm,
-    output [0:0]    ddr2_odt,
-    inout  [15:0]   ddr2_dq,
-    inout  [1:0]    ddr2_dqs_p,
-    inout  [1:0]    ddr2_dqs_n,
+    output [12:0]   ddr3_addr,
+    output [2:0]    ddr3_ba,
+    output          ddr3_ras_n,
+    output          ddr3_cas_n,
+    output          ddr3_we_n,
+    output [0:0]    ddr3_ck_p,
+    output [0:0]    ddr3_ck_n,
+    output [0:0]    ddr3_cke,
+    output [0:0]    ddr3_cs_n,
+    output [1:0]    ddr3_dm,
+    output [0:0]    ddr3_odt,
+    inout  [15:0]   ddr3_dq,
+    inout  [1:0]    ddr3_dqs_p,
+    inout  [1:0]    ddr3_dqs_n,
 	// Slave 3 (DAC_interface_AXI), DAC Interface
 	output [11:0] 	DAC_data,
 	// Slave 4 (ADC_interface_AXI), XADC Interface ANALOG pins
@@ -58,8 +58,8 @@ module impl_axi(
     //input [3:0]     VAUXN,
 	// Slave 5 (GPIO_interface_AXI), GPIO Control Pins, UART Hardware Control
 	inout  [31:0] 	GPIO_pin,
-	output 			UART_CTS,
-	input 			UART_RTS,
+	//output 			UART_CTS,
+	//input 			UART_RTS,
 	// Slave 6 (SEGMENT_interface_AXI), 7-segment full control pins
 	output [7:0]    SEGMENT_AN,
 	output [7:0]    SEGMENT_SEG,
@@ -70,9 +70,10 @@ module impl_axi(
 	);
 	
 	wire CLK;
-	wire CLK_64MHZ;
+	wire CLK_100MHZ_INT;
 	wire CLK_200MHZ;
-	assign CLK = CLK_64MHZ;
+	wire CLK_333MHZ;
+	assign CLK = CLK_100MHZ_INT;
 	wire RST_N;
 	assign RST_N = ~RST;
 	assign CLK_N = ~CLK;
@@ -87,7 +88,8 @@ module impl_axi(
       .clk_in1(CLK_100MHZ),
       // Clock out ports
       .clk_out1(CLK_200MHZ),
-	  .clk_out2(CLK_64MHZ),
+	    .clk_out2(CLK_100MHZ_INT),
+	    .clk_out3(CLK_333MHZ),
       // Status and control signals
       .reset(RST_CLK),
       .locked()
@@ -105,7 +107,7 @@ module impl_axi(
 	// Internals
 	wire PICORV_RST;				// Picorv RST
 	wire PICORV_RST_ALL;
-	assign PICORV_RST_ALL = PICORV_RST & RST;
+	assign PICORV_RST_ALL = /*PICORV_RST &*/ RST;
 	wire [31:0] irq;				// The IRQ
 	wire [GPIO_IRQ-1:0] CORE_IRQ;	// IRQ from GPIO
 	wire [GPIO_PINS-1:0] GPIO_PinIn;		// Pin in data
@@ -394,7 +396,7 @@ module impl_axi(
         .A(AXI_SP32B1024_A),
         .D(AXI_SP32B1024_D)
     );
-    // THIS IS A STANDARD CELL! YOU IDIOT!
+    // Replacement to the SP32B1024
     SP32B1024 SP32B1024_INT(
     .Q        (AXI_SP32B1024_Q),
     .CLK    (CLK),
@@ -434,9 +436,10 @@ module impl_axi(
 	);
 	
 	// Slave 2, AXI_SRAM
-	AXI_DDR2_MIG inst_AXI_DDR2_MIG(
+	AXI_DDR3_MIG inst_AXI_DDR3_MIG(
 		.CLK(CLK),
 		.CLK_200MHZ(CLK_200MHZ),
+		.CLK_333MHZ(CLK_333MHZ),
 		.RST(RST),
 		.axi_awvalid(s_axi_awvalid[2]),
 		.axi_awready(s_axi_awready[2]),
@@ -455,20 +458,20 @@ module impl_axi(
 		.axi_rvalid(s_axi_rvalid[2]),
 		.axi_rready(s_axi_rready[2]),
 		.axi_rdata(s_axi_rdata_o[2]),
-        .ddr2_cas_n          (ddr2_cas_n),       
-        .ddr2_ras_n          (ddr2_ras_n),       
-        .ddr2_we_n           (ddr2_we_n), 
-        .ddr2_addr           (ddr2_addr[12:0]),  
-        .ddr2_ba             (ddr2_ba[2:0]),     
-        .ddr2_ck_n           (ddr2_ck_n[0:0]),   
-        .ddr2_ck_p           (ddr2_ck_p[0:0]),   
-        .ddr2_cke            (ddr2_cke[0:0]),    
-        .ddr2_cs_n           (ddr2_cs_n[0:0]),   
-        .ddr2_dm             (ddr2_dm[1:0]),     
-        .ddr2_odt            (ddr2_odt[0:0]),  
-        .ddr2_dq             (ddr2_dq[15:0]),    
-        .ddr2_dqs_n          (ddr2_dqs_n[1:0]),  
-        .ddr2_dqs_p          (ddr2_dqs_p[1:0]) 
+        .ddr3_cas_n          (ddr3_cas_n),       
+        .ddr3_ras_n          (ddr3_ras_n),       
+        .ddr3_we_n           (ddr3_we_n), 
+        .ddr3_addr           (ddr3_addr[12:0]),  
+        .ddr3_ba             (ddr3_ba[2:0]),     
+        .ddr3_ck_n           (ddr3_ck_n[0:0]),   
+        .ddr3_ck_p           (ddr3_ck_p[0:0]),   
+        .ddr3_cke            (ddr3_cke[0:0]),    
+        .ddr3_cs_n           (ddr3_cs_n[0:0]),   
+        .ddr3_dm             (ddr3_dm[1:0]),     
+        .ddr3_odt            (ddr3_odt[0:0]),  
+        .ddr3_dq             (ddr3_dq[15:0]),    
+        .ddr3_dqs_n          (ddr3_dqs_n[1:0]),  
+        .ddr3_dqs_p          (ddr3_dqs_p[1:0]) 
 	);
 	
 	// Slave 3, DAC_interface_AXI
@@ -604,7 +607,7 @@ module impl_axi(
 	);
 	
 	// FPGA
-	assign UART_CTS = UART_RTS;
+	//assign UART_CTS = UART_RTS;
 	
 	GPIO_FPGA inst_GPIO_FPGA
 	(

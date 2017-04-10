@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 10 13:09:08 2017
+# Process ID: 22789
+# Current directory: /home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.runs/ddr3_synth_1
+# Command line: vivado -log ddr3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr3.tcl
+# Log file: /home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.runs/ddr3_synth_1/ddr3.vds
+# Journal file: /home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.runs/ddr3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ddr3.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1120.004 ; gain = 186.086 ; free physical = 1140 ; free virtual = 11419
+INFO: [Synth 8-638] synthesizing module 'ddr3' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ddr3.v:70]
+INFO: [Synth 8-638] synthesizing module 'ddr3_mig' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ddr3_mig.v:75]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_tempmon' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_tempmon' (1#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v:69]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_iodelay_ctrl' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v:80]
+INFO: [Synth 8-638] synthesizing module 'IDELAYCTRL' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16182]
+INFO: [Synth 8-256] done synthesizing module 'IDELAYCTRL' (2#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16182]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_iodelay_ctrl' (3#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v:80]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_clk_ibuf' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_clk_ibuf' (4#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_infrastructure' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:78]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (5#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (6#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32674]
+INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV' (7#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32674]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (8#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_infrastructure' (9#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:78]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_memc_ui_top_std' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_std.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_mem_intfc' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_mc' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_mc.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_mach' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_cntrl' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v:79]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (10#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_cntrl' (11#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v:79]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_common' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_common.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb' (12#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized0' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized0' (12#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_common' (13#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_common.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_mach' (14#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_mach' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_compare' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v:74]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_compare' (15#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v:74]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state' (16#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue' (17#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized0' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized0' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized0' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized0' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized0' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized0' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized1' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized1' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized1' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized1' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized1' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized1' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized2' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized2' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized2' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized2' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized2' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized2' (18#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_common' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_common.v:73]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_common' (19#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_common.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_mux' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v:69]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_row_col' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized1' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized1' (19#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized2' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized2' (19#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized3' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized3' (19#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized4' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized4' (19#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_row_col' (20#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_select' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_select.v:75]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_select' (21#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_select.v:75]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_mux' (22#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_mach' (23#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_col_mach' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_col_mach.v:88]
+INFO: [Synth 8-638] synthesizing module 'RAM32M' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36749]
+INFO: [Synth 8-256] done synthesizing module 'RAM32M' (24#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36749]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_col_mach' (25#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_col_mach.v:88]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_mc' (26#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/controller/mig_7series_v4_0_mc.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_top' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_mc_phy_wrapper' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-638] synthesizing module 'OBUF' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21927]
+INFO: [Synth 8-256] done synthesizing module 'OBUF' (27#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21927]
+INFO: [Synth 8-638] synthesizing module 'OBUFT' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:22143]
+INFO: [Synth 8-256] done synthesizing module 'OBUFT' (28#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:22143]
+INFO: [Synth 8-638] synthesizing module 'IOBUF_INTERMDISABLE' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17947]
+INFO: [Synth 8-256] done synthesizing module 'IOBUF_INTERMDISABLE' (29#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17947]
+INFO: [Synth 8-638] synthesizing module 'IOBUFDS_INTERMDISABLE' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17524]
+INFO: [Synth 8-256] done synthesizing module 'IOBUFDS_INTERMDISABLE' (30#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17524]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo' (31#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized0' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized0' (31#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized1' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized1' (31#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_mc_phy' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_4lanes' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized2' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized2' (31#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25305]
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (32#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25305]
+INFO: [Synth 8-638] synthesizing module 'OBUFDS' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21941]
+INFO: [Synth 8-256] done synthesizing module 'OBUFDS' (33#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:21941]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY' (34#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO' (35#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2' (36#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io' (37#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane' (38#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized0' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized3' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized3' (38#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized0' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized0' (38#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized0' (38#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized1' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_if_post_fifo' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_if_post_fifo' (39#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized4' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized4' (39#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'PHASER_IN_PHY' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32360]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_IN_PHY' (40#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32360]
+INFO: [Synth 8-638] synthesizing module 'IN_FIFO' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17265]
+INFO: [Synth 8-256] done synthesizing module 'IN_FIFO' (41#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:17265]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY__parameterized0' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY__parameterized0' (41#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO__parameterized0' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO__parameterized0' (41#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized1' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'IDELAYE2' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16195]
+INFO: [Synth 8-256] done synthesizing module 'IDELAYE2' (42#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:16195]
+INFO: [Synth 8-638] synthesizing module 'ISERDESE2' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:19685]
+INFO: [Synth 8-256] done synthesizing module 'ISERDESE2' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:19685]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized0' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized0' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized1' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized2' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized2' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized3' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized3' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized4' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized4' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized5' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized5' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized6' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized6' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized7' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized7' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized8' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized8' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized9' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized9' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized1' (43#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized1' (43#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized2' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized5' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized5' (43#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY__parameterized1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY__parameterized1' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32497]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO__parameterized1' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO__parameterized1' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25993]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized2' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized10' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized10' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized11' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized11' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized12' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized12' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized13' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized13' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized14' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized14' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized15' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized15' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized16' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized16' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized17' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized17' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized18' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized18' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized19' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized19' (43#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25878]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized2' (43#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized2' (43#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'BUFIO' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-256] done synthesizing module 'BUFIO' (44#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-638] synthesizing module 'PHY_CONTROL' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32588]
+INFO: [Synth 8-256] done synthesizing module 'PHY_CONTROL' (45#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32588]
+INFO: [Synth 8-638] synthesizing module 'PHASER_REF' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32572]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_REF' (46#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:32572]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_4lanes' (47#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_mc_phy' (48#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_mc_phy_wrapper' (49#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_calib_top' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v:82]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_wrlvl' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl.v:90]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_wrlvl' (50#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl.v:90]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay' (51#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_dqs_found_cal_hr' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_dqs_found_cal_hr' (52#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_rdlvl' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v:81]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_rdlvl' (53#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v:81]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_prbs_gen' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v:92]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_prbs_gen' (54#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v:92]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_init' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v:89]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_init' (55#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v:89]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_wrcal' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_wrcal' (56#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_tempmon' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_tempmon' (57#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_calib_top' (58#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v:82]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_top' (59#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_mem_intfc' (60#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_top' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_top.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_cmd' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_cmd' (61#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_wr_data' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v:131]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_wr_data' (62#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v:131]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_rd_data' [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v:140]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_rd_data' (63#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v:140]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_top' (64#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_top.v:71]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_memc_ui_top_std' (65#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_std.v:72]
+INFO: [Synth 8-256] done synthesizing module 'ddr3_mig' (66#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ddr3_mig.v:75]
+INFO: [Synth 8-256] done synthesizing module 'ddr3' (67#1) [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/ddr3.v:70]
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1286.043 ; gain = 352.125 ; free physical = 876 ; free virtual = 11174
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1286.043 ; gain = 352.125 ; free physical = 879 ; free virtual = 11177
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKFBOUT_MULT'. Expecting type 'int' with possible values of '2-64'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-73] Incorrect value '2147483.750000' specified for property 'CLKIN1_PERIOD'. The system will either use the default value or the property value will be dropped. Verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT0_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT1_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT2_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT3_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT4_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'DIVCLK_DIVIDE'. Expecting type 'int' with possible values of '1-56'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-346] The CLKOUT2_PHASE for PLLE2_ADV (plle2_i) is being adjusted from 9.8 to 0.0. The CLKOUT2_PHASE value needs to be in increments of 1/56 the FVCO and/or increments depending on CLKOUT_DIVIDE. Refer to the Clocking Resources User Guide of the device family for details.
+CRITICAL WARNING: [Netlist 29-346] The CLKOUT4_PHASE for PLLE2_ADV (plle2_i) is being adjusted from 168.8 to 135.0. The CLKOUT4_PHASE value needs to be in increments of 1/56 the FVCO and/or increments depending on CLKOUT_DIVIDE. Refer to the Clocking Resources User Guide of the device family for details.
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+CRITICAL WARNING: [Constraints 18-384] create_clock: period value should be non-zero positive float value. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3_ooc.xdc:34]
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1594.129 ; gain = 0.000 ; free physical = 732 ; free virtual = 11033
+Finished Constraint Validation : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1594.129 ; gain = 660.211 ; free physical = 725 ; free virtual = 11017
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 1594.129 ; gain = 660.211 ; free physical = 725 ; free virtual = 11017
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1594.129 ; gain = 660.211 ; free physical = 725 ; free virtual = 11017
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1594.129 ; gain = 660.211 ; free physical = 752 ; free virtual = 11044
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:41 ; elapsed = 00:03:47 . Memory (MB): peak = 2000.691 ; gain = 1066.773 ; free physical = 268 ; free virtual = 10571
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------------+------------+---------------+----------------+
+|Module Name                   | RTL Object | Depth x Width | Implemented As | 
++------------------------------+------------+---------------+----------------+
+|mig_7series_v4_0_ddr_prbs_gen | mem_out    | 256x18        | LUT            | 
+|mig_7series_v4_0_ddr_prbs_gen | mem_out    | 256x18        | LUT            | 
++------------------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                                            | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|ddr3        | of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg                                             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr3        | ddr_byte_lane_B.ddr_byte_lane_B/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr3        | ddr_byte_lane_C.ddr_byte_lane_C/dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo/mem_reg | Implied   | 4 x 80               | RAM32M x 14   | 
+|ddr3        | ddr_byte_lane_C.ddr_byte_lane_C/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr3        | ddr_byte_lane_D.ddr_byte_lane_D/dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo/mem_reg | Implied   | 4 x 80               | RAM32M x 14   | 
+|ddr3        | ddr_byte_lane_D.ddr_byte_lane_D/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:57 ; elapsed = 00:04:03 . Memory (MB): peak = 2081.980 ; gain = 1148.062 ; free physical = 186 ; free virtual = 10489
+Finished Timing Optimization : Time (s): cpu = 00:03:59 ; elapsed = 00:04:05 . Memory (MB): peak = 2084.980 ; gain = 1151.062 ; free physical = 184 ; free virtual = 10487
+Finished Technology Mapping : Time (s): cpu = 00:04:15 ; elapsed = 00:04:20 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 183 ; free virtual = 10486
+Finished IO Insertion : Time (s): cpu = 00:04:17 ; elapsed = 00:04:22 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 183 ; free virtual = 10486
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:17 ; elapsed = 00:04:23 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 183 ; free virtual = 10486
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:19 ; elapsed = 00:04:25 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 182 ; free virtual = 10485
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:19 ; elapsed = 00:04:25 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 182 ; free virtual = 10485
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:19 ; elapsed = 00:04:25 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 183 ; free virtual = 10486
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:20 ; elapsed = 00:04:25 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 183 ; free virtual = 10486
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |BUFG                  |     3|
+|2     |BUFH                  |     1|
+|3     |BUFIO                 |     1|
+|4     |CARRY4                |   106|
+|5     |IDELAYCTRL            |     1|
+|6     |IDELAYE2              |    16|
+|7     |IN_FIFO               |     2|
+|8     |ISERDESE2             |    16|
+|9     |LUT1                  |   423|
+|10    |LUT2                  |   438|
+|11    |LUT3                  |   754|
+|12    |LUT4                  |   874|
+|13    |LUT5                  |   893|
+|14    |LUT6                  |  1323|
+|15    |MMCME2_ADV            |     1|
+|16    |MUXF7                 |    16|
+|17    |ODDR                  |     5|
+|18    |OSERDESE2             |    23|
+|19    |OSERDESE2_1           |     2|
+|20    |OSERDESE2_2           |    18|
+|21    |OUT_FIFO              |     2|
+|22    |OUT_FIFO_1            |     2|
+|23    |PHASER_IN_PHY         |     2|
+|24    |PHASER_OUT_PHY        |     2|
+|25    |PHASER_OUT_PHY_1      |     2|
+|26    |PHASER_REF            |     1|
+|27    |PHY_CONTROL           |     1|
+|28    |PLLE2_ADV             |     1|
+|29    |RAM32M                |   105|
+|30    |SRL16E                |    17|
+|31    |SRLC32E               |     1|
+|32    |XORCY                 |     6|
+|33    |FDCE                  |     2|
+|34    |FDPE                  |    72|
+|35    |FDRE                  |  3311|
+|36    |FDSE                  |    77|
+|37    |IOBUFDS_INTERMDISABLE |     2|
+|38    |IOBUF_INTERMDISABLE   |    16|
+|39    |OBUF                  |    24|
+|40    |OBUFDS                |     1|
+|41    |OBUFT                 |     2|
++------+----------------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:20 ; elapsed = 00:04:25 . Memory (MB): peak = 2086.980 ; gain = 1153.062 ; free physical = 183 ; free virtual = 10486
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKFBOUT_MULT'. Expecting type 'int' with possible values of '2-64'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-73] Incorrect value '2147483.750000' specified for property 'CLKIN1_PERIOD'. The system will either use the default value or the property value will be dropped. Verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT0_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT1_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT2_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT3_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'CLKOUT4_DIVIDE'. Expecting type 'int' with possible values of '1-128'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '0' specified for property 'DIVCLK_DIVIDE'. Expecting type 'int' with possible values of '1-56'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:306]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-346] The CLKOUT2_PHASE for PLLE2_ADV (plle2_i) is being adjusted from 9.8 to 0.0. The CLKOUT2_PHASE value needs to be in increments of 1/56 the FVCO and/or increments depending on CLKOUT_DIVIDE. Refer to the Clocking Resources User Guide of the device family for details.
+CRITICAL WARNING: [Netlist 29-346] The CLKOUT4_PHASE for PLLE2_ADV (plle2_i) is being adjusted from 168.8 to 135.0. The CLKOUT4_PHASE value needs to be in increments of 1/56 the FVCO and/or increments depending on CLKOUT_DIVIDE. Refer to the Clocking Resources User Guide of the device family for details.
+CRITICAL WARNING: [Constraints 18-384] create_clock: period value should be non-zero positive float value. [/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.srcs/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3_ooc.xdc:34]
+synth_design: Time (s): cpu = 00:04:19 ; elapsed = 00:04:25 . Memory (MB): peak = 2086.988 ; gain = 1050.566 ; free physical = 155 ; free virtual = 10438
