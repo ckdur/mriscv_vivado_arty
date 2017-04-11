@@ -1,8 +1,44 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cduran/vivado/picorv32_vivado/picorv32_vivado.srcs/sources_1/imports/priencr.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module priencr
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cduran/vivado/picorv32_vivado/picorv32_vivado.srcs/sources_1/imports/axi4_interconnect.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module axi4_interconnect
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cduran/vivado/picorv32_vivado/picorv32_vivado.srcs/sim_1/imports/verilog/axi4_interconnect_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module axi4_interconnect_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cduran/vivado/picorv32_vivado/picorv32_vivado.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/IRQ/IRQ.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divM
+INFO: [VRFC 10-311] analyzing module Count
+INFO: [VRFC 10-311] analyzing module IRQ
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/MEMORY_INTERFACE/MEMORY_INTERFACE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMORY_INTERFACE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/MULT/MULT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Booth
+INFO: [VRFC 10-311] analyzing module Alg_Booth
+INFO: [VRFC 10-311] analyzing module MULT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/UTILITIES/UTILITY.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UTILITY
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/ALU/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_add
+INFO: [VRFC 10-311] analyzing module ALU_sub
+INFO: [VRFC 10-311] analyzing module ALU_and
+INFO: [VRFC 10-311] analyzing module ALU_xor
+INFO: [VRFC 10-311] analyzing module ALU_or
+INFO: [VRFC 10-311] analyzing module ALU_beq
+INFO: [VRFC 10-311] analyzing module ALU_blt
+INFO: [VRFC 10-311] analyzing module ALU_bltu
+INFO: [VRFC 10-311] analyzing module ALU_sXXx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/REG_FILE/REG_FILE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module true_dpram_sclk
+INFO: [VRFC 10-311] analyzing module REG_FILE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/DECO_INSTR/DECO_INSTR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECO_INSTR
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/FSM/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mriscvcore
+INFO: [VRFC 10-2458] undeclared symbol rdw_rsrn, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:132]
+INFO: [VRFC 10-2458] undeclared symbol savepc, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:162]
+INFO: [VRFC 10-2458] undeclared symbol en, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:163]
+INFO: [VRFC 10-2458] undeclared symbol enable_pc, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:206]
+INFO: [VRFC 10-2458] undeclared symbol aligned_mem, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:224]
+INFO: [VRFC 10-2458] undeclared symbol done_exec, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:225]
+INFO: [VRFC 10-2458] undeclared symbol enable_exec, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:233]
+INFO: [VRFC 10-2458] undeclared symbol enable_exec_mem, assumed default net type wire [/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v:234]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mriscvcore_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

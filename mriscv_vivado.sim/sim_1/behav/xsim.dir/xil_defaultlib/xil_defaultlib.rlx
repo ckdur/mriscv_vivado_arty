@@ -1,0 +1,15 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/ALU/ALU.v,1491890825,verilog,,,,ALU;ALU_add;ALU_and;ALU_beq;ALU_blt;ALU_bltu;ALU_or;ALU_sXXx;ALU_sub;ALU_xor,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/DECO_INSTR/DECO_INSTR.v,1491890825,verilog,,,,DECO_INSTR,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/FSM/FSM.v,1491890825,verilog,,,,FSM,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/IRQ/IRQ.v,1491890825,verilog,,,,Count;IRQ;divM,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/MEMORY_INTERFACE/MEMORY_INTERFACE.v,1491890825,verilog,,,,MEMORY_INTERFACE,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/MULT/MULT.v,1491890825,verilog,,,,Alg_Booth;FSM_Booth;MULT,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/REG_FILE/REG_FILE.v,1491890825,verilog,,,,REG_FILE;true_dpram_sclk,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/UTILITIES/UTILITY.v,1491890825,verilog,,,,UTILITY,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore.v,1491890825,verilog,,,,mriscvcore,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscvcore/mriscvcore_tb.v,1491890825,verilog,,,,mriscvcore_tb,,,../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,

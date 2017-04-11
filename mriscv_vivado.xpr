@@ -28,20 +28,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="arty"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="7"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="1"/>
-    <Option Name="WTModelSimExportSim" Val="1"/>
-    <Option Name="WTQuestaExportSim" Val="1"/>
-    <Option Name="WTIesExportSim" Val="1"/>
-    <Option Name="WTVcsExportSim" Val="1"/>
-    <Option Name="WTRivieraExportSim" Val="1"/>
-    <Option Name="WTActivehdlExportSim" Val="1"/>
+    <Option Name="WTXSimExportSim" Val="2"/>
+    <Option Name="WTModelSimExportSim" Val="2"/>
+    <Option Name="WTQuestaExportSim" Val="2"/>
+    <Option Name="WTIesExportSim" Val="2"/>
+    <Option Name="WTVcsExportSim" Val="2"/>
+    <Option Name="WTRivieraExportSim" Val="2"/>
+    <Option Name="WTActivehdlExportSim" Val="2"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -142,6 +142,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/ip/ddr3/ddr3.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/SP32B1024.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -228,7 +235,21 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/AXI_DDR3_MIG.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -320,8 +341,16 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PPRDIR/mriscvcore/mriscvcore_tb.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/imports/verilog/axi4_interconnect_tb.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../axi4_interconnect/verilog/axi4_interconnect_tb.v"/>
           <Attr Name="ImportTime" Val="1445968671"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -497,9 +526,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/mriscvcore/firmware.hex"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="axi4_interconnect_tb"/>
+        <Option Name="TopModule" Val="mriscvcore_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -512,98 +542,6 @@
         <Option Name="XSimWcfgFile" Val="$PPRDIR/SEGMENT_interface_AXI_test_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/GPIO_interface_AXI_test_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/AXI_DDR2_MIG_test_behav.wcfg"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ddr3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ddr3">
-      <File Path="$PSRCDIR/sources_1/ip/ddr3/ddr3.xci">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_col_mach.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3.veo"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3_stub.vhdl"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3_sim_netlist.vhdl"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="mig_a.prj"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3_stub.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3_sim_netlist.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_state.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="doc/mig_7series_v4_0_changelog.txt"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/constraints/ddr3.xdc"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/constraints/ddr3_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ui/mig_7series_v4_0_ui_top.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_common.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_common.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ecc/mig_7series_v4_0_ecc_buf.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ecc/mig_7series_v4_0_ecc_gen.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ecc/mig_7series_v4_0_ecc_merge_enc.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_mc.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_prbs_rdlvl.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_poc_edge_store.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_po_cntlr.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_cntlr.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_poc_pd.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_poc_tap_base.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_arb_select.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_lim.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_data.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl_off_delay.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_poc_cc.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_poc_top.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_poc_meta.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ecc/mig_7series_v4_0_fi_xor.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ecc/mig_7series_v4_0_ecc_dec_fix.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_skip_calib_tap.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_mux.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_oclkdelay_cal.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ddr3_mig_sim.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_samp.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_edge.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3.xml"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ddr3_mig.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ddr3.v"/>
-        <CompFileExtendedInfo CompFileName="ddr3.xci" FileRelPathName="ddr3/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_std.v"/>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="ddr3"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
   </FileSets>
@@ -636,17 +574,7 @@
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="ddr3_synth_1" Type="Ft3:Synth" SrcSet="ddr3" Part="xc7a35ticsg324-1L" ConstrsSet="ddr3" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ddr3_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
         <Step Id="init_design"/>
@@ -658,24 +586,6 @@
         <Step Id="route_design"/>
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream" PreStepTclHook="$PPRDIR/aditional_commands.tcl"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ddr3_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="ddr3" Description="Default settings for Implementation." SynthRun="ddr3_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
       </Strategy>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>

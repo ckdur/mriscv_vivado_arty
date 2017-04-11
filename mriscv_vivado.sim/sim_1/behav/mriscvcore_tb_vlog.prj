@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../mriscvcore/IRQ/IRQ.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/MEMORY_INTERFACE/MEMORY_INTERFACE.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/MULT/MULT.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/UTILITIES/UTILITY.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/ALU/ALU.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/REG_FILE/REG_FILE.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/DECO_INSTR/DECO_INSTR.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/FSM/FSM.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/mriscvcore.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../mriscvcore/mriscvcore_tb.v" --include "../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

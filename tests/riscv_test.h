@@ -20,8 +20,7 @@
 	.global TEST_FUNC_RET;		\
 TEST_FUNC_NAME:				\
 	la	a0,test_name;	\
-	lui	a2,DIR_PRINT>>12;	\
-	ori a2,a2,%lo(DIR_PRINT);		\
+	li	a2,DIR_PRINT;	\
 .prname_next:				\
 	lb	a1,0(a0);		\
 	beq	a1,zero,.prname_done;	\
@@ -40,8 +39,7 @@ TEST_FUNC_NAME:				\
 
 #define RVTEST_PASS			\
 PASSED:\
-	lui	a0,DIR_PRINT>>12;	\
-	ori a0,a0,%lo(DIR_PRINT);		\
+	li	a0,DIR_PRINT;	\
 	addi	a1,zero,'O';		\
 	addi	a2,zero,'K';		\
 	addi	a3,zero,'A';		\
@@ -57,8 +55,7 @@ PASSED:\
 
 #define RVTEST_FAIL			\
 FAILURE: \
-	lui	a0,DIR_PRINT>>12;	\
-	ori a0,a0,%lo(DIR_PRINT);		\
+	li	a0,DIR_PRINT;	\
 	addi	a1,zero,'E';		\
 	addi	a2,zero,'R';		\
 	addi	a3,zero,'O';		\

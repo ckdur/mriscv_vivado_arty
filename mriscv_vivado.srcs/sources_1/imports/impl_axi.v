@@ -132,9 +132,9 @@ module impl_axi(
 	// MEMORY MAP SPEC
 	
 	// Information about slaves:
-	// 0: AXI_SP32B1024. 4 MB (32MiB). 0x000003FF mask, 0x00000000 use. 0x00000000 - 0x000003FF
-    // 1: SPI_ROM. 16 MB (128MiB). 0x00003FFF mask, 0x00010000 use. 0x00010000 - 0x00013FFF
-	// 2: DDR2. 1GiB (8MB x 16 x 8 banks). Only supported 256MB. 0x7FFFFFFF mask, 0x80000000 use. 0x80000000 - 0xFFFFFFFF
+	// 0: AXI_SP32B1024. 4 MB (32Mib). 0x000003FF mask, 0x00800000 use. 0x00800000 - 0x00800FFF
+    // 1: SPI_ROM. 16 MB (8MB usable) (128Mib). 0x007FFFFF mask, 0x00010000 use. 0x00000000 - 0x007FFFFF
+	// 2: DDR2. 256MiB (8MB x 16 x 8 banks). Only supported 256MB. 0x0FFFFFFF mask, 0x80000000 use. 0x80000000 - 0xFFFFFFFF
 	// 3: DAC. 4B (Just response by one dir). 0x00000001 mask, 0x00005000 use. 0x00005000 - 0x00005001
 	// 4: XADC. 512B (7-bit lsh 2 dir). 0x000001FF mask, 0x00004000 use. 0x00004000 - 0x000041FF
 	// 5: GPIO. 512B (PWM[32] + PWM[32] + 1 + 1 + 1 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 1 = 92. 128 << 2 = 512). 0x000001FF mask, 0x00004200 use. 0x00004200 - 0x000043FF
@@ -144,8 +144,8 @@ module impl_axi(
 	localparam sword = 32;
 	localparam masters = 2;
 	localparam slaves = 8;
-	localparam [slaves*sword-1:0] addr_mask = {32'h00000000,32'h0000001F,32'h000001FF,32'h000001FF,32'h00000001,32'h7FFFFFFF,32'h00003FFF,32'h00000FFF};
-	localparam [slaves*sword-1:0] addr_use  = {32'h10000000,32'h00004600,32'h00004200,32'h00004000,32'h00005000,32'h80000000,32'h00010000,32'h00000000};
+	localparam [slaves*sword-1:0] addr_mask = {32'h00000000,32'h0000001F,32'h000001FF,32'h000001FF,32'h00000001,32'h0FFFFFFF,32'h007FFFFF,32'h00000FFF};
+	localparam [slaves*sword-1:0] addr_use  = {32'h10000000,32'h10004600,32'h10004200,32'h10004000,32'h10005000,32'h80000000,32'h00000000,32'h00800000};
 	
 	// AXI4-lite master memory interfaces
 
@@ -621,7 +621,7 @@ module impl_axi(
 		.GPIO_pin(GPIO_pin)
 	);
 	
-	/*ila_0 ila_0_inst (
+	ila_0 ila_0_inst (
     .clk(CLK),
 	.probe0(m_axi_awvalid[0]),
 	.probe1(m_axi_awready[0]),
@@ -666,6 +666,6 @@ module impl_axi(
 	.probe40(GPIO_Pulldown),		// Pin Pulldown resistor active
 	.probe41(GPIO_Pullup),		// Pin Pullup resistor active
 	.probe42(PROGADDR_IRQ)
-    );*/
+    );
 	
 endmodule

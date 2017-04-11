@@ -1,5 +1,5 @@
 #!/bin/bash -f
-xv_path="/usr/local/Xilinx/Vivado/2015.4"
+xv_path="/opt/Xilinx/Vivado/2016.4"
 ExecStep()
 {
 "$@"
@@ -9,5 +9,5 @@ then
 exit $RETVAL
 fi
 }
-echo "xvlog -m64 --relax -prj axi4_interconnect_tb_vlog.prj"
-ExecStep $xv_path/bin/xvlog -m64 --relax -prj axi4_interconnect_tb_vlog.prj 2>&1 | tee compile.log
+echo "xvlog -m64 --relax -prj mriscvcore_tb_vlog.prj"
+ExecStep $xv_path/bin/xvlog -m64 --relax -prj mriscvcore_tb_vlog.prj 2>&1 | tee compile.log
