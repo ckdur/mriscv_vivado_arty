@@ -65,6 +65,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/priencr.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/bus_sync_sf.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -79,14 +86,63 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/priencr.v">
+      <File Path="$PSRCDIR/sources_1/ip/ddr3/ddr3.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/ddr3/ddr3.xci">
+      <File Path="$PPRDIR/mriscv/mriscvcore/FSM/FSM.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/UTILITIES/UTILITY.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/MULT/MULT.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/REG_FILE/REG_FILE.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/IRQ/IRQ.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/MEMORY_INTERFACE/MEMORY_INTERFACE.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/ALU/ALU.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/DECO_INSTR/DECO_INSTR.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -158,13 +214,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/axi4_interconnect.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/new/ADC_interface_AXI.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -193,94 +242,44 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/impl_axi.v">
+      <File Path="$PPRDIR/mriscv/mriscvcore/mriscvcore.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/mriscvcore/IRQ/IRQ.v">
+      <File Path="$PPRDIR/mriscv/mriscv_axi/axi4_interconnect/axi4_interconnect.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/mriscvcore/MEMORY_INTERFACE/MEMORY_INTERFACE.v">
+      <File Path="$PSRCDIR/sources_1/imports/impl_axi_fpga.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/mriscvcore/MULT/MULT.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/mriscvcore/UTILITIES/UTILITY.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/mriscvcore/ALU/ALU.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/mriscvcore/REG_FILE/REG_FILE.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/mriscvcore/DECO_INSTR/DECO_INSTR.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/mriscvcore/FSM/FSM.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/mriscvcore/mriscvcore.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/AXI_DDR2_MIG.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/ram2ddr.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/ddr_axi/ddr_axi.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/XADC_REG.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -296,7 +295,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/AXI_DDR2.v">
+      <File Path="$PSRCDIR/sources_1/new/AXI_DDR2_MIG.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -304,8 +303,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/ddr/ddr.upgrade_log"/>
-      <File Path="$PSRCDIR/sources_1/new/XADC_REG.v">
+      <File Path="$PSRCDIR/sources_1/new/AXI_DDR2.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -318,22 +316,28 @@
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/ddr_axi/ddr_axi.xci">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/ip/ddr3/mig_a.prj">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/tests/test_macros.h">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/tests/riscv_test.h">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="impl_axi"/>
+        <Option Name="TopModule" Val="impl_axi_fpga"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -350,23 +354,6 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/mriscvcore/mriscvcore_tb.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/imports/verilog/axi4_interconnect_tb.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../axi4_interconnect/verilog/axi4_interconnect_tb.v"/>
-          <Attr Name="ImportTime" Val="1445968671"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sim_1/imports/39571024Mb_ddr2/ddr2_parameters.vh">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -381,30 +368,6 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../NEXYS4-doc/DDR-NEXYS4/Nexys4-DDR-testing-master/39571024Mb_ddr2/ddr2.v"/>
           <Attr Name="ImportTime" Val="1450578592"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/AXI_DDR2_MIG_test.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/AXI_SRAM_test.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/impl_axi_test.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -455,7 +418,23 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/new/impl_axi_test.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/new/GPIO_interface_AXI_test.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/AXI_SRAM_test.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -479,6 +458,24 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/new/AXI_DDR2_MIG_test.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/verilog/axi4_interconnect_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../axi4_interconnect/verilog/axi4_interconnect_tb.v"/>
+          <Attr Name="ImportTime" Val="1445968671"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sim_1/new/ADC_interface_AXI_test.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -487,55 +484,83 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/AXI_SRAM_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/AXI_SRAM_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/AXI_SRAM_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/AXI_DDR2_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/AXI_DDR2_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/AXI_DDR2_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/AXI_SPI_ROM_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/AXI_SPI_ROM_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/AXI_SPI_ROM_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/XADC_REG_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/XADC_REG_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/XADC_REG_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/ADC_interface_AXI_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/ADC_interface_AXI_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/ADC_interface_AXI_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/SEGMENT_interface_AXI_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/SEGMENT_interface_AXI_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/SEGMENT_interface_AXI_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/GPIO_interface_AXI_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/GPIO_interface_AXI_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/GPIO_interface_AXI_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/AXI_DDR2_MIG_test_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/AXI_DDR2_MIG_test_behav.wcfg">
         <FileInfo>
           <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/AXI_DDR2_MIG_test_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1491845317"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/mriscvcore/firmware.hex"/>
+      <File Path="$PSRCDIR/sim_1/imports/mriscv_vivado_arty/mriscv/mriscvcore/firmware.hex">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/mriscv/mriscvcore/firmware.hex"/>
+          <Attr Name="ImportTime" Val="1491947207"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/mriscv/mriscvcore/mriscvcore_tb.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="mriscvcore_tb"/>

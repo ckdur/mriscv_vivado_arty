@@ -10,7 +10,7 @@ you need to re-adapt all the things.
 
 `timescale 1ns/1ns
 
-module impl_axi( 
+module impl_axi_fpga( 
 	// General
 	input 			CLK_100MHZ,
 	input 			RST,
@@ -241,7 +241,17 @@ module impl_axi(
 	// Instances
 	
 	// AXI INTERCONNECT, axi4_interconnect
-	axi4_interconnect inst_axi4_interconnect
+	axi4_interconnect #
+	(
+	    .masters(masters),
+        .slaves(slaves),
+        .sword(sword),
+        .impl(0),
+        .addressing(0),
+        .addr_mask(addr_mask),
+        .addr_use(addr_use)
+	) 
+	inst_axi4_interconnect
 	(
 		.CLK		(CLK),
 		.RST	(RST),
