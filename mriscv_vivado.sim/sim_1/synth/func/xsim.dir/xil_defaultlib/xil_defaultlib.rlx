@@ -1,0 +1,6 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/ckdur/Documents/mriscv_vivado_arty/mriscv/mriscv_axi/impl_axi/impl_axi_tb.v,1491962221,verilog,,,,impl_axi_tb,,,../../../../mriscv/mriscvcore/tests;../../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,
+/home/ckdur/Documents/mriscv_vivado_arty/mriscv_vivado.sim/sim_1/synth/func/impl_axi_tb_func_synth.v,1491969718,verilog,,,,ADC_interface_AXI;ALU;ALU_add;ALU_and;ALU_beq;ALU_blt;ALU_bltu;ALU_or;ALU_sXXx;ALU_sub;ALU_xor;AXI_SP32B1024;Alg_Booth;Alg_Booth__1;Alg_Booth__parameterized0;DAC_interface_AXI;DECO_INSTR;FSM;FSM_Booth;FSM_Booth__1;FSM_Booth__parameterized0;IRQ;MEMORY_INTERFACE;MULT;REG_FILE;SP32B1024;UTILITY;axi4_interconnect;bus_sync_sf;bus_sync_sf__parameterized0;bus_sync_sf__parameterized1;bus_sync_sf__parameterized2;completogpio;decodificador;decodificador__1;flipflopRS;flipflopRS__1;flipflopRS__2;flipflopRS__3;flipflopRS__4;flipflopRS__5;flipflopRS__6;flipflopRS__7;flipsdataw;flipsdataw__1;flipsdataw__2;flipsdataw__3;flipsdataw__4;flipsdataw__5;flipsdataw__6;flipsdataw__7;glbl;impl_axi;latchW;latchW__1;macstate2;mriscvcore;spi_axi_master;spi_axi_slave;true_dpram_sclk;xilinx_single_port_ram_write_first,,,../../../../mriscv/mriscvcore/tests;../../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2,,,,,

@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "impl_axi_tb_func_synth.v" --include "../../../../mriscv/mriscvcore/tests" --include "../../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+verilog xil_defaultlib  "../../../../mriscv/mriscv_axi/impl_axi/impl_axi_tb.v" --include "../../../../mriscv/mriscvcore/tests" --include "../../../../mriscv_vivado.srcs/sim_1/imports/39571024Mb_ddr2"
+
+# Do not sort compile order
+nosort
