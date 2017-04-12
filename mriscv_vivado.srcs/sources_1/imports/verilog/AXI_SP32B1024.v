@@ -48,9 +48,9 @@ module AXI_SP32B1024(
 			DP <= {32{1'b0}};
 		end else begin 
 			if(axi_awvalid == 1'b1) begin
-				A <= axi_awaddr[11:2];
+				A <= axi_awaddr[9:0];
 			end else if(axi_arvalid == 1'b1) begin
-				A <= axi_araddr[11:2];
+				A <= axi_araddr[9:0];
 			end
 			
 			if(axi_wvalid == 1'b1) begin
