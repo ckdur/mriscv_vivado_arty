@@ -631,7 +631,7 @@ module impl_axi_fpga(
         .GPIO_pin(GPIO_pin)
     );
     
-    ila_0 ila_0_inst (
+    /*ila_0 ila_0_inst (
     .clk(CLK),
     .probe0(m_axi_awvalid[0]),
     .probe1(m_axi_awready[0]),
@@ -676,6 +676,6 @@ module impl_axi_fpga(
     .probe40(GPIO_Pulldown),        // Pin Pulldown resistor active
     .probe41(GPIO_Pullup),        // Pin Pullup resistor active
     .probe42(PROGADDR_IRQ)
-    );
+    );*/
     
 endmodule
