@@ -323,7 +323,7 @@ module impl_axi_fpga(
     mriscvcore mriscvcore_inst (
         .clk    (CLK            ),
         .rstn   (PICORV_RST_ALL  ),
-        //.trap   (trap           ),
+        .trap   (trap           ),
         .AWvalid(m_axi_awvalid[0]),
         .AWready(m_axi_awready[0]),
         .AWdata (m_axi_awaddr_o[0]),
