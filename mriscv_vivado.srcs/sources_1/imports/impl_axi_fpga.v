@@ -506,7 +506,7 @@ module impl_axi_fpga(
 	);
 	
 	//Slave 4, ADC_interface_AXI
-	ADC_interface_AXI inst_ADC_interface_AXI(
+	ADC_interface_AXI_XADC inst_ADC_interface_AXI(
 		.CLK(CLK),
 		.RST(RST),
 		.axi_awvalid(s_axi_awvalid[4]),
