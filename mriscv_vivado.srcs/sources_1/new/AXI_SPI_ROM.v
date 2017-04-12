@@ -159,7 +159,7 @@ STARTUPE2_inst (
                 raddr <= raddr;
                 rassert <= 1'b0;
             end else if(axi_arvalid) begin
-                raddr <= axi_araddr;
+                raddr <= axi_araddr | 32'h00800000;
                 rassert <= 1'b1;
             end else begin
                 raddr <= raddr;
