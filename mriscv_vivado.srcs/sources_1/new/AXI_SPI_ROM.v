@@ -308,7 +308,7 @@ STARTUPE2_inst (
                 end
             st2_com_read: begin 
                 cap_enable = 1'b1;
-                command_data = {8'h03, raddr, 32'd0};
+                command_data = {8'h03, raddr[23:0], 40'd0};
                 command_sync_stop = 8+24+32-1;
                 end
             st3_rvalid: begin 
